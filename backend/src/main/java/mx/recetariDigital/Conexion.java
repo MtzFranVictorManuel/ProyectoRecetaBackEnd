@@ -11,8 +11,8 @@ import java.sql.SQLException;
  * @author victormanuel
  */
 public class Conexion {
-    private static String url = "jdbc:mysql://localhost/recetariodigital";
-    private static String driverName = "com.mysql.jdbc.Driver"; // com.mysql.cj.jdbc.Driver
+    private static String url = "jdbc:mysql://localhost:3306/recetariodigital";
+    private static String driverName = "com.mysql.cj.jdbc.Driver"; // com.mysql.cj.jdbc.Driver
     private static String username = "root";
     private static String password = "Man159753";
     // variable de conexion

@@ -38,7 +38,7 @@ public class App {
         UsuarioDAO usuarioDAO = new UsuarioDAO();
 
         // Endpoint POST para crear un nuevo usuario
-        Spark.post("/usuarios", (req, res) -> {
+        post("/usuarios", (req, res) -> {
             Gson gson = new Gson();
             Usuario nuevoUsuario = gson.fromJson(req.body(), Usuario.class);
             usuarioDAO.insertarUsuario(nuevoUsuario);
@@ -46,12 +46,12 @@ public class App {
         });
 
         // Endpoint GET para verificar si un usuario existe
-        Spark.post("/login", (req, res) -> {
+        get("/login", (req, res) -> {
             String nombreUsuario = req.queryParams("username");
             String contraseña = req.queryParams("password");
 
             boolean usuarioExiste = usuarioDAO.verificarUsuario(nombreUsuario, contraseña);
-
+            
             if (usuarioExiste) {
                 return "Inicio de sesión exitoso";
             } else {
