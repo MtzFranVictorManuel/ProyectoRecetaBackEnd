@@ -18,7 +18,7 @@ public class UsuarioDAO {
             statement.setString(2, usuario.getNombres());
             statement.setString(3, usuario.getApellidos());
             statement.setString(4, usuario.getCorreoElectronico());
-            statement.setString(5, usuario.getGenero());
+            statement.setString(5, null);
             statement.setString(6, usuario.getContraseña());
 
             int filasInsertadas = statement.executeUpdate();

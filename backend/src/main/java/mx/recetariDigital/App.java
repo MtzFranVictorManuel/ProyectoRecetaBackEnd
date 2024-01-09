@@ -41,6 +41,7 @@ public class App {
         post("/usuarios", (req, res) -> {
             Gson gson = new Gson();
             Usuario nuevoUsuario = gson.fromJson(req.body(), Usuario.class);
+            System.out.println(nuevoUsuario.getCorreoElectronico());
             usuarioDAO.insertarUsuario(nuevoUsuario);
             return "Usuario creado exitosamente";
         });

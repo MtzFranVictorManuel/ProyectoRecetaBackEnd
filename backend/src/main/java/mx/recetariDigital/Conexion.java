@@ -13,7 +13,7 @@ import java.sql.SQLException;
 public class Conexion {
     private static String url = "jdbc:mysql://localhost:3306/recetariodigital";
     private static String driverName = "com.mysql.cj.jdbc.Driver"; // com.mysql.cj.jdbc.Driver
-    private static String username = "root";
+    private static String username = "root"; //root1234df
     private static String password = "Man159753";
     // variable de conexion
     private static Connection connection = null;

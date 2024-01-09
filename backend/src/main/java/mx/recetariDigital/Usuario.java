@@ -6,7 +6,7 @@ public class Usuario {
     private String nombres;
     private String apellidos;
     private String correoElectronico;
-    private String genero;
+    //private String genero;
     private String contraseña;
 
     // Constructor vacío (puedes agregar otros constructores según necesites)
@@ -54,13 +54,13 @@ public class Usuario {
         this.correoElectronico = correoElectronico;
     }
 
-    public String getGenero() {
+   /*  public String getGenero() {
         return genero;
     }
 
     public void setGenero(String genero) {
         this.genero = genero;
-    }
+    }*/
 
     public String getContraseña() {
         return contraseña;
